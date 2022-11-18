@@ -122,7 +122,7 @@ const renderAccount = () => {
 
     labelDate.textContent = [ date[2], Number(date[1]) < 10 ? '0' + date[1] : date[1] , date[0] ].join('/');
 
-    let time = 10;
+    let time = 300;
     labelTimer.textContent = Math.trunc(time / 60) + ':' + (time % 60 > 9 ? time % 60 : '0' + time % 60);
 
     const timer = setInterval(() => {
